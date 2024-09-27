@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home {
+    height: 100vh;
+    width: 100%;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(imgs/galaxy.gif);
+}
+
+.home-content {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 200px;
+}
+
+.home-text {
+    flex: 1;
+    font-size: 30px;
+    min-width: 400px;
+    color: white;
+}
+.home-text h2{
+    font-family: "Manrope", sans-serif;
+    font-weight: bold;
+}
+.home-text p{
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+}
+
+
+.home-image{
+    flex: 1;
+    min-width: 400px;
+    text-align: center;
+}
+
+.home-image img{
+    width: 663px;
+    height: 627px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.home-image img:hover {
+    transform: scale(1.05);
+}
+
+.titanium {
+    height: 500px;
+    width: 100%;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EAE4E4;
+
+}
+
+.titanium-text {
+    flex: 1;
+    font-size: 20px;
+    min-width: 400px;
+    text-align: right;
+}
+
+.titanium-text h1{
+    font-family: "Manrope", sans-serif;
+    font-weight: bold;
+}
+
+.titanium-text h3{
+    font-family: "Noto Sans", sans-serif;
+    font-weight: normal;
+}
+.titanium-text p{
+    font-family: "Noto Sans", sans-serif;
+    font-weight:lighter;
+}
+
+.titanium-image{
+    flex: 1;
+    min-width: 400px;
+    text-align: center;
+}
+
+.titanium-image img{
+    width: 800px;
+    height: 214px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.spen {
+    height: 500px;
+    width: 100%;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.spen-text {
+    flex: 1;
+    font-size: 30px;
+    min-width: 200px;
+    text-align: left;
+    color: #EAE4E4;
+}
+
+.spen-text h2{
+    font-family: "Manrope", sans-serif;
+    font-weight: bold;
+}
+
+.spen-text p{
+    font-family: "Noto Sans", sans-serif;
+    font-weight: normal;
+}
+
+.spen-content {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.spen-image img{
+    width: 613px;
+    height: 407px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.camera {
+    height: 500px;
+    width: 100%;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EAE4E4;
+
+}
+
+.camera-text {
+    flex: 1;
+    font-size: 30px;
+    min-width: 300px;
+    text-align: left;
+    color: black;
+}
+
+.camera-text h2{
+    font-family: "Manrope", sans-serif;
+    font-weight: bold;
+}
+
+.camera-text p{
+    font-family: "Noto Sans", sans-serif;
+    font-weight: normal;
+}
+
+.camera-content {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.camera-image img{
+    width: 700px;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+@media (max-width: 768px) {
+    .home-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-text {
+        margin-bottom: 20px;
+    }
+
+    .home-image img {
+        width: 300px;
+        height: 450px;
+    }
+}
+
+@media (max-width: 768px) {
+    .titanium-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .titanium{
+        height: 100%;
+    }
+
+    .titanium-text {
+
+        margin-bottom: 20px;
+    }
+
+    .titanium-image img {
+        width: 400px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .spen-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .spen{
+        height: 100%;
+    }
+
+    .spen-text {
+
+        margin-bottom: 20px;
+    }
+
+    .spen-image img {
+        width: 400px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .camera {
+        flex-direction: column;
+        text-align: center;
+    }
+    .camera{
+        height: 100%;
+    }
+
+    .camera-text {
+
+        margin-bottom: 20px;
+    }
+
+    .camera-image img {
+        width: 200px;
+        height: 300px;
+    }
+}
