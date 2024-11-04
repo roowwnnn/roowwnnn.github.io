@@ -24,7 +24,7 @@ const loadCharacters = async () => {
 
        characterContainer.innerHTML += `
        <div class="col-12 col-sm-12 col-md-4 col-xl-3 p-5">
-            <div class="shadow-lg card mx-auto characterCard" style="height: 342px; width: 235px; background-color:${visionColors[characterDataResponse.vision]}; ">
+            <a href="view.html?result=${characterDataResponse.id}"><div class="shadow-lg card mx-auto characterCard" style="height: 342px; width: 235px; background-color:${visionColors[characterDataResponse.vision]}; ">
                 <div class="row p-3">
                     <div class="container cardImgContainer" style="height: 232px; width: 169px; border-radius: 50px; border-style: groove; background-color: white;">
                         <img src="https://genshin.jmp.blue/characters/${characterResponse[i]}/card" class="img-fluid">
@@ -35,7 +35,7 @@ const loadCharacters = async () => {
                         <p><b>${characterDataResponse.name}</b></p>
                     </div>
                 </div>
-            </div>
+            </div></a>
         </div>
        `
 

@@ -32,7 +32,7 @@ const loadData = async (searchTerm) => {
             const data = await characterResponse.json();
 
             searchResultCard.innerHTML = `
-                <div class="shadow card mx-auto p-5 searchResult" style="background-color: ${visionColors[data.vision]}">
+                <a href="view.html?result=${data.id}"><div class="shadow card mx-auto p-5 searchResult" style="background-color: ${visionColors[data.vision]}">
                     <div class="row">
                         <div class="col-12 col-md-6" style="height: 270px;">
                             <div class="container searchImgContainer p-3" style="width:270px; height: 270px; overflow: hidden;">
@@ -45,13 +45,13 @@ const loadData = async (searchTerm) => {
                             <p><b>Rarity:</b> ${data.rarity} Star</p>
                         </div>
                     </div>
-                </div>
+                </div></a>
             `;
         } else if (weaponResponse.ok) {
             const data = await weaponResponse.json();
 
             searchResultCard.innerHTML = `
-                <div class="shadow card mx-auto p-5 searchResult" style="background-color: black">
+                <a href="view.html?result=${data.id}"><div class="shadow card mx-auto p-5 searchResult" style="background-color: black">
                     <div class="row">
                         <div class="col-12 col-md-6" style="height: 270px;">
                             <div class="container searchImgContainer" style="width:270px; height: 270px; overflow: hidden;">
@@ -64,7 +64,7 @@ const loadData = async (searchTerm) => {
                             <p><b>Type:</b> ${data.type}</p>
                         </div>
                     </div>
-                </div>
+                </div></a>
             `;
         } else {
             throw new Error('Character or weapon not found');

@@ -13,7 +13,7 @@ const loadWeapons = async () => {
 
        characterContainer.innerHTML += `
        <div class="col-12 col-sm-12 col-md-4 col-xl-3 p-5">
-            <div class="shadow card mx-auto weaponCard" style="height: 300px; width: 255px;">
+            <a href="view.html?result=${weaponDataResponse.id}"><div class="shadow card mx-auto weaponCard" style="height: 300px; width: 255px;">
                 <div class="row p-3">
                     <div class="container cardImgContainer"
                         style="height: 150px; width: 169px; border-radius: 50px; border-style: ridge;">
@@ -25,7 +25,7 @@ const loadWeapons = async () => {
                         <p><b>${weaponDataResponse.name}</b></p>
                     </div>
                 </div>
-            </div>
+            </div> </a>
         </div>
        `
 
