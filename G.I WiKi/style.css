@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+
+.navBarContainer {
+    background-color: black;
+}
+
+.navBarLogo {
+    width: 220px;
+    height: 65px;
+}
+
+.navbar .nav-link {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    margin-right: 50px;
+    color: white
+}
+
+.searchBarContainer {
+    padding: 180px
+}
+
+.searchBar {
+    background-color: #D9D9D9;
+    height: 100px;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.searchInput {
+    height: 80px;
+    width: 1111px;
+    border-radius: 20px 0px 0px 20px !important;
+}
+
+.searchButton {
+    height: 80px;
+    width: 100px;
+    border-radius: 0px 20px 20px 0px !important;
+
+}
+
+.searchResult {
+    border-radius: 10px;
+    max-width: 900px;
+}
+
+.searchImgContainer {
+    border-radius: 20px;
+    text-align: center;
+    border-style: groove;
+    background-color:white
+}
+
+.searchResultTextContainer {
+    overflow: hidden;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    color:white
+
+
+}
+.label{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 30px;
+
+
+}
+.characterCard{
+    border-radius: 20px !important; 
+}
+.characterCard:hover{
+    background-color: black !important;
+   
+}
+
+.weaponCard{
+    border-radius: 20px !important; 
+}
+.weaponCard:hover{
+    background-color: #D9D9D9;
+}
+.cardTextContainer{
+    color:white;
+}
+.cardTextContainer:hover{
+    color: #D9D9D9;
+}
+
+.cardImgContainer{
+    overflow: hidden;
+}
+
+.textLabelContainer{
+    margin-top: 140px;
+}
+
+@media (max-width: 768px) {
+    .searchBarContainer {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
