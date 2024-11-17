@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+
+* {
+    overflow-x: hidden;
+    overflow-y: auto;
+
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.mainContainer {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.navContainer {
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(0,0,0, 0.3); 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+
+li {
+    margin: 35px 18px;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 1vw;
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
+nav ul li a:hover {
+    color: #ddd;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+}
+
+.logoContainer {
+    margin-top: 30px;
+}
+
+.slideShowContainer {
+    padding: 0;
+    position: relative;
+}
+
+.slides {
+    position: relative;
+    z-index: -1;
+}
+
+.slide {
+    object-fit: cover;
+    vertical-align: middle;
+    position: relative;
+    z-index: -1;
+
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 3vw;
+    margin-top: 1vw;
+    color: white;
+    font-weight: bold;
+    font-size: 3vw;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    text-decoration: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0,0,0, 0.3); 
+}
+
+.textField {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    color: white;
+    position: absolute;
+
+}
+
+
+.textLocation{
+    font-family: "Lato", sans-serif;
+    font-size: 1.5vw;
+    font-weight: 700;
+    font-style:italic
+}
+.textPlace {
+    font-family: "Abril Fatface", serif;
+    font-size: 5vw;
+    font-weight: 400;
+    font-style: normal;
+}
+.articles{
+    background-color: #ddd
+}
+.card{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px 5px 5px 5px;
+}
+.placeName{
+    font-family: "Abril Fatface", serif;
+    font-style: normal;
+}
+
+.placeDetails{
+    font-family: "Lato",sans-serif;
+    font-style: normal;
+}
+.about{
+    font-family: "Abril Fatface", serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3vw;
+    color:#fff;
+    text-align: center;
+}
+.aboutText{
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-size: 2vw;
+    color:#fff;
+    margin-top:30px;
+}
+.aboutContainer{
+    background-color: #282897;
+    
+}
+.flag{
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+.column1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

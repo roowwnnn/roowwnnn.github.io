@@ -1,128 +1,149 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="icon" href="imgs/rglogo.png">
-    <title>
-        Ron Gabriel Ramos
-    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gabriel | Portfolio</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link rel="icon" href="imgs/rg_logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
 
-    <body>
-        <div class="navbar">
-            <nav>
-                <ul>
-                    <li><a href="#homepage">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                </ul>
-            </nav>
-        </div>
+    <!-- Navigation Bar -->
 
-        <div id="homepage" class="home">
-            <div class="logo-container">
-                <img src="imgs/rglogo.png" alt="Ron Gabriel Ramos Logo">
+    <nav class="navbar navbar-dark navbar-expand-lg navBar fixed-top" id="navBar">
+        <div class="container-fluid p-3">
 
-            </div>
-            <div class="name-container">
-                <p class="name">Ron <br> &nbsp;&nbsp;&nbsp;Gabriel <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ramos</p>
-            </div>
-        </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-
-        <div id="about" class="about">
-            <div class="about-content">
-                <div class=about-text>
-                    <h2>Hi! I'm <span>Ron <br>Gabriel Ramos</span></h2>
-                    <p>3rd Year, BSIT</p>
-                    <p>Polytechnic University of the Philippines</p>
-                    <p>Sto. Tomas, Batangas Branch</p>
-                </div>
-                <div class="about-image">
-                    <img src="imgs/pfp.jpg" alt="Ron Gabriel Ramos">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-item nav-link" href="#home">HOME</a>
+                    <a class="nav-item nav-link" href="#about">ABOUT</a>
+                    <a class="nav-item nav-link" href="#projects">PROJECTS</a>
                 </div>
             </div>
         </div>
+    </nav>
 
-        <div class="projects" id="projects">
-            <div class="projects-container">
-                <h2>My Projects</h2>
-                <div class="projects-grid">
+    <!-- Background -->
+    <div class="row vidRow" id="home">
+        <div class="videoContainer">
+            <iframe class="videoBackground"
+                src="https://www.youtube.com/embed/ZeFyrpUc7tM?vq=hd1080&autoplay=1&mute=1&loop=1&rel=0&fs=0&controls=0&disablekb=1&playsinline=1&playlist=ZeFyrpUc7tM"
+                frameborder="0" allow="autoplay; fullscreen"></iframe>
+            <div class="container-fluid logoContainer">
+                <img class="img-fluid p-5 logo" src="imgs/rg_logo.png" alt="logo">
+            </div>
+        </div>
 
-                    <div class="project-item">
-                        <a href="Activity 4_Hardware Showcase/index.html">
-                            <img src="imgs/Activity_4.png" alt="Activity 4">
-                            <h3>Activity #4</h3>
-                        </a>
+    </div>
+
+    <div class="row aboutContainer">
+        <div class="p-5" id="about"></div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-5">
+            <div class="container aboutPicContainer">
+                <img src="imgs/profile.png" class="img-fluid pfp">
+            </div>
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
+            <div class="continer aboutText p-5">
+                <span class="greeting">Hi! I'm</span>
+                <span class="name">Ron </span>
+                <p class="name">Gabriel Ramos</p>
+                <div class="aboutText2">
+                    <div class="row">
+                        <p><b><i>3rd Year, BSIT | Future Developer</i></b></p>
                     </div>
-                    <div class="project-item">
-                        <a href="Welcome2Australia/index.html">
-                            <img src="imgs/welcome2Australia.png" alt="Activity 5">
-                            <h3>Activity #5</h3>
-                        </a>
+
+                    <div class="row p-3">
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" style="text-align: center;">
+                            <img class="img-fluid" width="50" height="50" src="imgs/school_icn.png">
+                        </div>
+                        <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
+                            <span>Polytechnic University of the Philippines
+                                Sto. Tomas, Batangas Branch</span>
+                        </div>
                     </div>
-                    <div class="project-item">
-                        <a href="Genshin Impact/index.html">
-                            <img src="imgs/Genshin Impact.png" alt="Activity 6">
-                            <h3>Activity #6</h3>
-                        </a>
+
+                    <div class="row p-3">
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" style="text-align: center;">
+                            <img class="img-fluid" width="50" height="50" src="imgs/home_icn.png">
+                        </div>
+                        <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
+                            <span>Lipa City, Batangas, Philippines</span>
+                        </div>
+
                     </div>
-                    <div class="project-item">
-                        <a href="G.I WiKi/index.html">
-                            <img src="imgs/project4.png" alt="Project 4">
-                            <h3>Project 4</h3>
-                        </a>
+
+                    <div class="row p-3">
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" style="text-align: center;">
+                            <img class="img-fluid" width="50" height="50" src="imgs/email_icn.png">
+                        </div>
+                        <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10" style="word-wrap: break-word;">
+                            <span>rongabriel01.ramos@gmail.com</span>
+                        </div>
+
                     </div>
-                    <div class="project-item">
-                        <a href="project5-link.html">
-                            <img src="imgs/project-def.png" alt="Project 5">
-                            <h3>Project Name</h3>
-                        </a>
-                    </div>
-                    <div class="project-item">
-                        <a href="project6-link.html">
-                            <img src="imgs/project-def.png" alt="Project 6">
-                            <h3>Project Name</h3>
-                        </a>
-                    </div>
-                    <div class="project-item">
-                        <a href="project7-link.html">
-                            <img src="imgs/project-def.png" alt="Project 7">
-                            <h3>Project Name</h3>
-                        </a>
-                    </div>
-                    <div class="project-item">
-                        <a href="project8-link.html">
-                            <img src="imgs/project-def.png" alt="Project 8">
-                            <h3>Project Name</h3>
-                        </a>
-                    </div>
-                    <div class="project-item">
-                        <a href="project9-link.html">
-                            <img src="imgs/project-def.png" alt="Project 9">
-                            <h3>Project Name</h3>
-                        </a>
-                    </div>
+
                 </div>
+
+            </div>
+
+        </div>
+
+        <div class="p-5"></div>
+
+    </div>
+
+    <div class="row projectsContainer" style="position: relative;" id="projects">
+        <div class="container projectsLogoContainer"><img class="img-fluid" src="imgs/rglogo_dim.png"></div>
+        <div class="col-12">
+            <div class="container projectsText">
+                <p>Projects</p>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="row" id="projectContainer">
             </div>
         </div>
 
 
+    </div>
 
 
 
-    </body>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        const navbar = document.getElementById('navBar');
+
+        function isScrolled() {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+
+        }
+        window.addEventListener('scroll', isScrolled);
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
 
 </html>
