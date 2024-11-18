@@ -124,6 +124,10 @@
     padding-top:50px;
 }
 
+/* Footer Settings */
+.customFooter {
+    background-color: #660708 !important;
+}
 
 
 /* Media Queries  */
