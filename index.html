@@ -144,6 +144,19 @@
     <script src="script.js"></script>
 
     
+    <script>
+        let videoIframe = document.querySelector('.videoBackground');
+        
+        document.addEventListener('visibilitychange', function() {
+          if (document.visibilityState === 'visible') {
+            let currentSrc = videoIframe.src;
+            videoIframe.src = '';
+            videoIframe.src = currentSrc;  
+          }
+        });
+      </script>
+
+    
 
 </body>
 
