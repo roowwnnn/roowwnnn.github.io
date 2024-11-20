@@ -1,266 +1,124 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    background-color: #EAE4E4 !important;
+}
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+/*Navigation Bar Settings*/
+.nav-item{
+    padding: 10px !important;
 }
 
-.home {
-    height: 100vh;
-    width: 100%;
-    padding: 60px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url(imgs/galaxy.gif);
+.backButton{
+    height: 40px !important;
+    width: 90px !important;
+    background-color: #2A75E5 !important;
 }
 
-.home-content {
-    max-width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 200px;
-}
-
-.home-text {
-    flex: 1;
-    font-size: 30px;
-    min-width: 400px;
-    color: white;
-}
-.home-text h2{
-    font-family: "Manrope", sans-serif;
-    font-weight: bold;
-}
-.home-text p{
-    font-family: "Noto Sans", sans-serif;
-    font-weight: bold;
-}
-
-
-.home-image{
-    flex: 1;
-    min-width: 400px;
-    text-align: center;
-}
-
-.home-image img{
-    width: 663px;
-    height: 627px;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out;
-}
-
-.home-image img:hover {
-    transform: scale(1.05);
-}
-
-.titanium {
-    height: 500px;
-    width: 100%;
-    padding: 60px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #EAE4E4;
-
-}
-
-.titanium-text {
-    flex: 1;
-    font-size: 20px;
-    min-width: 400px;
-    text-align: right;
-}
-
-.titanium-text h1{
-    font-family: "Manrope", sans-serif;
-    font-weight: bold;
-}
-
-.titanium-text h3{
-    font-family: "Noto Sans", sans-serif;
-    font-weight: normal;
-}
-.titanium-text p{
-    font-family: "Noto Sans", sans-serif;
-    font-weight:lighter;
-}
-
-.titanium-image{
-    flex: 1;
-    min-width: 400px;
-    text-align: center;
-}
-
-.titanium-image img{
-    width: 800px;
-    height: 214px;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out;
-}
-
-.spen {
-    height: 500px;
-    width: 100%;
-    padding: 60px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#navBar.scrolled{
     background-color: black;
 }
 
-.spen-text {
-    flex: 1;
-    font-size: 30px;
-    min-width: 200px;
-    text-align: left;
-    color: #EAE4E4;
+/* Background Settings */
+
+.backgroundRow{
+    background-color: black;
+    height: 100vh;
+
 }
 
-.spen-text h2{
-    font-family: "Manrope", sans-serif;
-    font-weight: bold;
-}
-
-.spen-text p{
-    font-family: "Noto Sans", sans-serif;
-    font-weight: normal;
-}
-
-.spen-content {
-    max-width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 100px;
-}
-
-.spen-image img{
-    width: 613px;
-    height: 407px;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out;
-}
-
-.camera {
-    height: 500px;
-    width: 100%;
-    padding: 60px 20px;
+.backgroundRow{
+    position:relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #EAE4E4;
-
+}
+.title{
+    position: absolute;
+    text-align: center;
+}
+.brand{
+    font-family: "Monda", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 50px; 
+    color:white
 }
 
-.camera-text {
-    flex: 1;
-    font-size: 30px;
-    min-width: 300px;
-    text-align: left;
-    color: black;
-}
-
-.camera-text h2{
-    font-family: "Manrope", sans-serif;
-    font-weight: bold;
-}
-
-.camera-text p{
+.brand2{
     font-family: "Noto Sans", sans-serif;
-    font-weight: normal;
-}
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px; 
+    color:white;
 
-.camera-content {
-    max-width: 100%;
+}
+.backgroundVideoContainer{
+    height: 800px !important;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 100px;
+    overflow: hidden;
 }
 
-.camera-image img{
-    width: 700px;
-    height: 400px;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out;
-}
-@media (max-width: 768px) {
-    .home-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .home-text {
-        margin-bottom: 20px;
-    }
-
-    .home-image img {
-        width: 300px;
-        height: 450px;
-    }
+.videoHighlights{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
-@media (max-width: 768px) {
-    .titanium-content {
-        flex-direction: column;
-        text-align: center;
-    }
-    .titanium{
-        height: 100%;
-    }
+/* Fonts */
+.fontHead{
+    font-family: "Monda", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 40px; 
+    
+}
 
-    .titanium-text {
+.fontBody{
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 20px; 
 
-        margin-bottom: 20px;
-    }
+}
 
-    .titanium-image img {
-        width: 400px;
-        height: 200px;
+/* Media Query */
+@media (max-width:1280px){
+    .backgroundVideoContainer{
+        height: 300px !important;
     }
 }
 
-@media (max-width: 768px) {
-    .spen-content {
-        flex-direction: column;
-        text-align: center;
-    }
-    .spen{
-        height: 100%;
-    }
-
-    .spen-text {
-
-        margin-bottom: 20px;
-    }
-
-    .spen-image img {
-        width: 400px;
-        height: 200px;
+@media (max-width:600px){
+    .backgroundVideoContainer{
+        height: 300px !important;
     }
 }
 
-@media (max-width: 768px) {
-    .camera {
-        flex-direction: column;
-        text-align: center;
+@media (max-width:375px){
+    .brand{
+        font-size: 40px;
     }
-    .camera{
-        height: 100%;
+    .brand2{
+        font-size: 30px;
     }
-
-    .camera-text {
-
-        margin-bottom: 20px;
+    .backgroundVideoContainer{
+        height: 200px !important;
     }
 
-    .camera-image img {
-        width: 200px;
-        height: 300px;
+    .fontHead{
+        font-size: 20px; 
+        
+    }
+    
+    .fontBody{
+        font-size: 10px; 
+    
     }
 }
+

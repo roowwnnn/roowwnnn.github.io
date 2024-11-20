@@ -1,86 +1,128 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
-
-
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="icon" href="imgs/galaxyailogo.png">
-    <title>
-        Samsung Galaxy S24 Ultra
-    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SAMSUNG | Galaxy S24 Ultra</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link rel="icon" href="imgs/galaxyAI.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
 
-    <div id="homepage" class="home">
-        <div class="home-content">
-            <div class="home-image">
-                <img src="imgs/s24_ultra.png" alt="Galaxy S24 Ultra">
-            </div>
-            <div class=home-text>
-                <h2>SAMSUNG Galaxy S24 Ultra</h2>
-                <p>Meet Galaxy AI</p>
-                <img src="imgs/galaxyailogo.png" alt="Galaxy AI Logo">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-dark navbar-expand-lg navBar fixed-top" id="navBar">
+        <div class="container-fluid p-3">
+            <div class="navbar-brand p-2"><img class="img-fluid" src="imgs/logo.png"></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-item nav-link" href="../index.html"><button class="btn custom-btn backButton"><img
+                                class="img-fluid" src="imgs/arrow.png"></button></a>
+                </div>
             </div>
-
         </div>
-    </div>
+    </nav>
 
-    <div id="titaniumpage" class="titanium">
-        <div class="titanium-content">
-            <div class="titanium-image">
-                <img src="imgs/titanium_s24.png" alt="Galaxy S24 Ultra">
-            </div>
-            <div class=titanium-text>
-                <h1>The All - New Titanium Body</h1>
-                <h3>Lighter.Stronger</h3>
-                <p>a durable shield of titanium <br>
-                    built right into the frame.</p>
 
-            </div>
 
-        </div>
-    </div>
-
-    <div id="spen" class="spen">
-        <div class="spen-content">
-            <div class="spen-text">
-                <h2>Built in Spen</h2>
-                <p>Writing the chapters of your life.
-
-                </p>
-            </div>
-            <div class="spen-image">
-                <img src="imgs/spen_s24.png" alt="Galaxy S24 Ultra">
+    <!-- Background -->
+    <div class="row backgroundRow">
+        <div class="container-fluid title">
+            <p class="brand">Samsung Galaxy S24 Ultra</p>
+            <p class="brand2">Meet Galaxy AI <img class="img-fluid" src="imgs/galaxyAI.png"></p>
+            <div class="container-fluid backgroundVideoContainer">
+                <video class="videoHighlights" autoplay muted loop>
+                    <source src="imgs/galaxyS24.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </div>
     </div>
 
-    <div id="camera" class="camera">
-        <div class="camera-content">
-            <div class="camera-image">
-            <img class="s24cam"src="imgs/camera_s24.png" alt="Galaxy S24 Ultra">
-            </div>
+    <div class="row p-5" style="text-align: center;">
+        <div class="col-12" style="text-align: center;">
+            <img class="img-fluid" src="imgs/titaniums24.png">
         </div>
-        <div class="camera-text">
-            <h2>Industry Leading Camera</h2>
-            <p>Paired with Galaxy AI</p>
-            <img src="imgs/galaxyailogo.png" alt="Galaxy AI Logo">
+        <div class="col-12" style="text-align: right; display: flex; align-items: center; justify-content: center;">
+            <div class="container" style="width: 900px;">
+                <p class="fontHead">The All - new Titanium Body</p>
+                <p class="fontHead">Lighter & Stronger</p>
+                <p class="fontBody">a durable shield of titanium</p>
+                <p class="fontBody">built right into the frame.</p>
+            </div>
         </div>
 
     </div>
+    <div class="row p-5" style="background-color: black; text-align: center;">
+       
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" style="color: white; text-align: center; display: flex; align-items: center; justify-content: center;">
+            <div class="container" style="width: 900px;">
+                <p class="fontHead">Built in Spen</p>
+                <p class="fontHead">Writing new chapters of your life.</p>
+              
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" style="text-align: center;">
+            <img class="img-fluid" src="imgs/spen.png">
+        </div>
+
+    </div>
+
+    <div class="row p-5" style="text-align: center;">
+        <div class="col-12" style="text-align: center;">
+            <img class="img-fluid" src="imgs/camera_s24.png">
+        </div>
+        <div class="col-12" style="text-align: right; display: flex; align-items: center; justify-content: center;">
+            <div class="container" style="width: 900px;">
+                <p class="fontHead">Industry Leading Camera</p>
+                <p class="fontHead">Paired with Galaxy AI <img class="img-fluid" src="imgs/galaxyAI.png"></p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        const navbar = document.getElementById('navBar');
+
+        function isScrolled() {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+
+        }
+        window.addEventListener('scroll', isScrolled);
+    </script>
+
+
+
+    <script>
+        let videoIframe = document.querySelector('.videoBackground');
+
+        document.addEventListener('visibilitychange', function () {
+            if (document.visibilityState === 'visible') {
+                let currentSrc = videoIframe.src;
+                videoIframe.src = '';
+                videoIframe.src = currentSrc;
+            }
+        });
+    </script>
 
 
 
 </body>
+
+</html>
