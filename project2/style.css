@@ -3,8 +3,8 @@
 
 
 * {
-    overflow-x: hidden;
-    overflow-y: auto;
+    padding: 0;
+    margin: 0;
 
 
 }
@@ -12,51 +12,44 @@ html{
     scroll-behavior: smooth;
 }
 
-.mainContainer {
-    padding: 0;
-    margin: 0;
-    position: relative;
+
+/*Navigation Bar Settings*/
+.nav-item{
+    padding: 10px !important;
+}
+.nav-link{
+    font-size: 20px !important;
+    color: white;
 }
 
-.navContainer {
-    position: fixed;
-    z-index: 1;
-    background-color: rgba(0,0,0, 0.3); 
+.backButton{
+    height: 40px !important;
+    width: 90px !important;
+    background-color: #2A75E5 !important;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: right;
+#navBar.scrolled{
+    background-color: #282897;
 }
 
-li {
-    margin: 35px 18px;
+.navbar {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
 }
 
-li a {
-    text-decoration: none;
-    font-size: 1vw;
-    color: #fff;
-    font-family: "Lato", sans-serif;
-    font-weight: 900;
-    font-style: normal;
+.navbar-expanded {
+    background-color: rgba(0, 0, 0, 0.8);
+    
 }
 
 
 
-nav ul li a:hover {
-    color: #ddd;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
-}
-
-.logoContainer {
-    margin-top: 30px;
-}
+/* Slide Show Settings */
 
 .slideShowContainer {
     padding: 0;
     position: relative;
+    overflow: hidden;
 }
 
 .slides {
@@ -109,7 +102,6 @@ nav ul li a:hover {
 
 }
 
-
 .textLocation{
     font-family: "Lato", sans-serif;
     font-size: 1.5vw;
@@ -122,49 +114,99 @@ nav ul li a:hover {
     font-weight: 400;
     font-style: normal;
 }
-.articles{
-    background-color: #ddd
-}
+
+/* Card Settings */
+
 .card{
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 5px 5px 5px 5px;
+    padding: 5px;
+    height: 850px;
+   
+    border-radius: 30px;
+}
+.cardImg{
+    border-radius: 30px;
 }
 .placeName{
+    padding-top:10px;
     font-family: "Abril Fatface", serif;
     font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
 }
-
+.placeLocation{
+    font-family: "Lato",sans-serif;
+    font-style: italic;
+    font-size: 14px;
+}
 .placeDetails{
     font-family: "Lato",sans-serif;
     font-style: normal;
-}
-.about{
-    font-family: "Abril Fatface", serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 3vw;
-    color:#fff;
-    text-align: center;
-}
-.aboutText{
-    font-family: "Lato", sans-serif;
-    font-style: normal;
-    font-size: 2vw;
-    color:#fff;
-    margin-top:30px;
-}
-.aboutContainer{
-    background-color: #282897;
+    font-weight: 500;
+    font-size: 14px;
     
 }
-.flag{
-    margin-bottom: 30px;
+/* About Settings */
+.imgColumn{
     text-align: center;
+    padding: 40px;
+}
+.aboutContainer{
+    background-color: #135AAC;
+}
+.aboutTitle{ 
+    font-family: "Abril Fatface", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color:white;
+    text-align: left;
+    padding-top: 20px;
 
 }
-.column1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.imgContainer{
+    padding-top: 20px;
+   
+}
+
+.textContainer{
+    text-align: center;
+}
+
+.aboutText{
+    font-family: "Lato",sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color:white
+}
+
+.aboutMap{ 
+    font-family: "Abril Fatface", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: Center;
+    padding-top: 20px;
+
+}
+
+
+
+@media (max-width: 550px){
+    .logo{
+        width: 100px;
+    }
+}
+
+
+@media (max-width: 375px){
+    .logo{
+        width: 50px;
+    }
+    .nav-link{
+        font-size: 15px !important;
+    }
+
 }
