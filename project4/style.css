@@ -23,6 +23,12 @@
     color: white
 }
 
+.backButton{
+    height: 40px !important;
+    width: 90px !important;
+    background-color: #2A75E5 !important;
+}
+
 .searchBarContainer {
     padding: 180px
 }
