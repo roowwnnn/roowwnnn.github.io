@@ -24,6 +24,13 @@
     background-color: black;
 }
 
+/* Navigation 404 */
+.backButton{
+    height: 40px !important;
+    width: 90px !important;
+    background-color:#860111 !important;
+}
+
 /* Background Settings */
 .videoContainer {
     position: relative;
@@ -42,6 +49,8 @@
     width: 300%;
     height: 100%;
 }
+
+
 .logoContainer{
     position: absolute;
     text-align: center;
@@ -60,6 +69,43 @@
     }
 }
 
+/* Background Settings 404 */
+
+
+.videoContainer404 {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center
+}
+
+
+.videoBackground404 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transform: translate(-50%, -50%); 
+}
+
+.logoContainer404{
+    position: absolute;
+    text-align: center;
+    overflow: hidden; 
+}
+.textContainer404{
+    position: absolute;
+    color:white;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px !important;
+}
 
 /* About Settings */
 .aboutContainer{
@@ -152,6 +198,7 @@
     .videoContainer{
         aspect-ratio: 9/16;
     } 
+  
     .logo{
         height: 250px !important;
 
