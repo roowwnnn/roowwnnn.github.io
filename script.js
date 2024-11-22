@@ -3,7 +3,8 @@ var projectpics = [
     "project2.png",
     "project3.png",
     "project4.png",
-    "project5.png"
+    "project5.png",
+    "project6.png"
 ];
 
 
