@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gabriel | Portfolio | App Dev</title>
+    <link href="../style.css" type="text/css" rel="stylesheet">
+    <link rel="icon" href="../imgs/rg_logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+   <!-- Navigation Bar -->
+
+    <nav class="navbar navbar-dark navbar-expand-lg navBar fixed-top" id="navBar">
+        <div class="container-fluid p-3">
+     
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-item nav-link" href="../index.html"><button class="btn custom-btn backButton"><img
+                                class="img-fluid" src="../imgs/arrow.png"></button></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+  
+
+    <div class="container-fluid projectsContainer" id="projects" style="min-height: 100vh;">
+        <div class="container projectsLogoContainer d-flex justify-content-center"><img class="img-fluid" src="../imgs/rglogo_dim.png"></div>
+        <div class="row">
+            <div class="col-12" >
+                <div class="container projectsText mt-3">
+                    <p>App Development Projects</p>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="row" id="projectContainer" style="display: flex; justify-content: center; align-items: center;">
+                         
+                </div>
+               
+            </div>
+            
+        </div>
+        
+
+       
+
+      
+
+    </div>
+
+
+    <!-- Footer -->
+
+    <div class="row customFooter">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top customFooter">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+                    style="padding-left: 50px;">
+                    <img src="../imgs/rg_logo.png" alt="logo" style="width:35px; height:35px;">
+                </a>
+                <span class="mb-3 mb-md-0" style="color: white;"><b>© 2024 Ramos, Ron Gabriel P.</b></span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex" style="padding-right: 15px;">
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/roowwwnn/"><img
+                            src="../imgs/instagram.png" alt="instagram" style="width:35px; height:35px;"></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://x.com/roowwwnn"><img
+                            src="../imgs/twitter.png" alt="twitter" style="width:35px; height:35px;"></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/rongabriel.ramos"><img
+                            src="../imgs/facebook.png" alt="facebook" style="width:35px; height:35px;"></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="rongabriel01.ramos@gmail.com"><img
+                            src="../imgs/email_icn.png" alt="email" style="width:35px; height:35x;"></a></li>
+            </ul>
+        </footer>
+
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        const navbar = document.getElementById('navBar');
+
+        function isScrolled() {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+
+        }
+        window.addEventListener('scroll', isScrolled);
+    </script>
+
+    <script src="appdevprojects.js"></script>
+
+
+    <script>
+        let videoIframe = document.querySelector('.videoBackground');
+
+        document.addEventListener('visibilitychange', function () {
+            if (document.visibilityState === 'visible') {
+                let currentSrc = videoIframe.src;
+                videoIframe.src = '';
+                videoIframe.src = currentSrc;
+            }
+        });
+    </script>
+
+
+
+</body>
+
+</html>

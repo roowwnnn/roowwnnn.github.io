@@ -112,7 +112,8 @@
         </div>
 
         <div class="col-12">
-            <div class="row" id="projectContainer">
+            <div class="row" id="projectContainer" style="display: flex; justify-content: center; align-items: center;">
+               
             </div>
         </div>
 
@@ -120,28 +121,33 @@
     </div>
 
 
-     <!-- Footer -->
+    <!-- Footer -->
 
-     <div class ="row customFooter">
+    <div class="row customFooter">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top customFooter">
             <div class="col-md-4 d-flex align-items-center">
-              <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" style="padding-left: 50px;">
-                <img src="imgs/rg_logo.png" alt="logo" style="width:35px; height:35px;">
-              </a>
-              <span class="mb-3 mb-md-0" style="color: white;"><b>© 2024 Ramos, Ron Gabriel P.</b></span>
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+                    style="padding-left: 50px;">
+                    <img src="imgs/rg_logo.png" alt="logo" style="width:35px; height:35px;">
+                </a>
+                <span class="mb-3 mb-md-0" style="color: white;"><b>© 2024 Ramos, Ron Gabriel P.</b></span>
             </div>
-        
+
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex" style="padding-right: 15px;">
-              <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/roowwwnn/"><img src="imgs/instagram.png" alt="instagram" style="width:35px; height:35px;"></a></li>
-              <li class="ms-3"><a class="text-body-secondary" href="https://x.com/roowwwnn"><img src="imgs/twitter.png" alt="twitter" style="width:35px; height:35px;"></a></li>
-              <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/rongabriel.ramos"><img src="imgs/facebook.png" alt="facebook" style="width:35px; height:35px;"></a></li>
-              <li class="ms-3"><a class="text-body-secondary" href="rongabriel01.ramos@gmail.com"><img src="imgs/email_icn.png" alt="email" style="width:35px; height:35x;"></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/roowwwnn/"><img
+                            src="imgs/instagram.png" alt="instagram" style="width:35px; height:35px;"></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://x.com/roowwwnn"><img
+                            src="imgs/twitter.png" alt="twitter" style="width:35px; height:35px;"></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/rongabriel.ramos"><img
+                            src="imgs/facebook.png" alt="facebook" style="width:35px; height:35px;"></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="rongabriel01.ramos@gmail.com"><img
+                            src="imgs/email_icn.png" alt="email" style="width:35px; height:35x;"></a></li>
             </ul>
-          </footer>    
+        </footer>
 
-     </div>
+    </div>
 
-    
+
 
 
 
@@ -163,22 +169,22 @@
         window.addEventListener('scroll', isScrolled);
     </script>
 
-    <script src="script.js"></script>
+    <script src="folder.js"></script>
 
-    
+
     <script>
         let videoIframe = document.querySelector('.videoBackground');
-        
-        document.addEventListener('visibilitychange', function() {
-          if (document.visibilityState === 'visible') {
-            let currentSrc = videoIframe.src;
-            videoIframe.src = '';
-            videoIframe.src = currentSrc;  
-          }
-        });
-      </script>
 
-    
+        document.addEventListener('visibilitychange', function () {
+            if (document.visibilityState === 'visible') {
+                let currentSrc = videoIframe.src;
+                videoIframe.src = '';
+                videoIframe.src = currentSrc;
+            }
+        });
+    </script>
+
+
 
 </body>
 
