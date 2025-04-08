@@ -1,0 +1,81 @@
+/*PUT YOUR CUSTOM STYLE HERE*/
+
+/*!This style is important, do not override!*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Navigation Bar Settings */
+.nav-item{
+    padding-top:20px !important;
+    padding-right: 50px !important;
+    color:white !important;
+    font-family: "Lora", serif;
+    font-size: 20px !important;
+    font-weight: 700 !important; 
+}
+.nav-item:hover{
+    color:gray !important;
+}
+
+.backButton{
+    height: 40px !important;
+    width: 90px !important;
+    background-color: #2A75E5 !important;
+}
+#navBar.scrolled{
+    background-color: black;
+}
+
+/* About Settings */
+.aboutTitle{
+    font-family: "Monda", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 40px; 
+}
+
+.aboutsubTitle{
+    font-family: "Monda", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 35px; 
+}
+
+.contentContainer{
+    background-color: #821319 !important;
+    border-radius: 30px;
+}
+.imgContainer{
+    border-radius: 30px;
+    text-align: center; 
+}
+.carPic{
+	border-radius: 30px;
+}
+.textContainer{
+    font-family: "Monda", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 26px; 
+    color:white;
+    text-align: center;
+}
+.detailsContainer {
+	font-family: "Monda", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 26px; 
+    color:white;
+    text-align: justify;
+}
+
+@media (max-width: 450px){
+    .textContainer{
+        font-size: 20px;
+    }
+    .detailsContainer{
+        font-size: 20px;
+    }
+}
