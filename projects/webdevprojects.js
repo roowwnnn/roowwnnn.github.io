@@ -4,6 +4,7 @@ var projectpics = [
     "webdevproject3.png",
     "webdevproject4.png",
     "webdevproject5.png",
+    "webdevproject6.png"
 
 
 ];
