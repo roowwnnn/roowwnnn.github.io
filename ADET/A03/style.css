@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400..700&display=swap');
+
+ *{
+    padding: 0 !important;
+    margin: 0 !important;
+} 
+/* Navigation Bar Settings */
+.nav-item{
+    padding-top:20px !important;
+    padding-right: 50px !important;
+    color:white !important;
+    font-family: "Lora", serif;
+    font-size: 20px !important;
+    font-weight: 700 !important; 
+}
+.nav-item:hover{
+    color:gray !important;
+}
+
+.backButton{
+    height: 40px !important;
+    width: 90px !important;
+    background-color: #2A75E5 !important;
+}
+#navBar.scrolled{
+    background-color: black;
+}
+
+.videoContainer {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    pointer-events: none;
+    overflow: hidden;
+    display: flex; 
+    justify-content: center; 
+    align-items: center
+ 
+}
+
+.videoBackground {
+    position: absolute; 
+    width: 300%;
+    height: 100%;
+   
+}
+
+.logoContainer{
+    position: absolute;
+    text-align: center;
+    overflow: hidden; 
+}
+
+.logo{
+    animation: logoRotate 5s infinite linear;
+}
+@keyframes logoRotate{
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+
+/* About Settings */
+.aboutTitle{
+    font-family: "Monda", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 40px; 
+}
+
+.aboutsubTitle{
+    font-family: "Monda", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 35px; 
+}
+
+.contentContainer{
+    background-color: #821319 !important;
+    border-radius: 30px;
+}
+.imgContainer{
+    border-radius: 30px !important; 
+
+    text-align: center 
+}
+.textContainer{
+    font-family: "Monda", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 26px; 
+    color:white;
+    text-align: center;
+}
+
+/* Footer Settings */
+.customFooter {
+    background-color: black !important;
+}
+
+/* Media Queries  */
+@media (max-width: 1400px) {
+    .logo{
+        height: 500px !important;
+
+    }
+}
+
+@media (max-width: 1200px) {
+    .logo{
+        height: 400px !important;
+
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .videoContainer{
+        aspect-ratio: 9/16;
+    } 
+    .logo{
+        height: 250px !important;
+
+    }
+}
+
+
+
+@media (max-width: 350px) { 
+    .logo{
+        height: 150px !important;
+
+    }
+}
