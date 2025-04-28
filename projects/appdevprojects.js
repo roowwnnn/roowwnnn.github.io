@@ -1,5 +1,5 @@
 var projectpics = [
-    "appdevproject2.png",
+    "appdevproject2.PNG",
 
 
 ];
